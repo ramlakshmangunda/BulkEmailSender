@@ -1,0 +1,1 @@
+﻿Scaffold-DbContext "Data Source=localhost;Initial Catalog=VOLTASBEKO;Integrated Security=False; User Id=sa; Password=Mobile123; Timeout=500000;" Microsoft.EntityFrameworkCore.SqlServer -Schema dbo -OutputDir TableEntities -Context BekoDBContext -Project BulkMailSender -StartupProject BulkMailSender -f

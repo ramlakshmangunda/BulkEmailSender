@@ -1,0 +1,4 @@
+Y:\Working Projects\BulkMailSender\BulkMailSender\obj\Debug\netcoreapp2.2\BulkMailSender.csprojAssemblyReference.cache
+Y:\Working Projects\BulkMailSender\BulkMailSender\obj\Debug\netcoreapp2.2\BulkMailSender.AssemblyInfoInputs.cache
+Y:\Working Projects\BulkMailSender\BulkMailSender\obj\Debug\netcoreapp2.2\BulkMailSender.AssemblyInfo.cs
+Y:\Working Projects\BulkMailSender\BulkMailSender\obj\Debug\netcoreapp2.2\BulkMailSender.csproj.CoreCompileInputs.cache

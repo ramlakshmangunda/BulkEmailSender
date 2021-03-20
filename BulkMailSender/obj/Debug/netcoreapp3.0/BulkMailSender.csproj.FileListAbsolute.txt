@@ -1,0 +1,228 @@
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\nlog.config
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\appsettings.Development.json
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\appsettings.json
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\BulkMailSender.exe
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\BulkMailSender.deps.json
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\BulkMailSender.runtimeconfig.json
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\BulkMailSender.runtimeconfig.dev.json
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\BulkMailSender.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\BulkMailSender.pdb
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\AutoMapper.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\EPPlus.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Humanizer.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.Data.SqlClient.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.DotNet.PlatformAbstractions.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Abstractions.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Memory.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Abstractions.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Abstractions.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Options.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.Identity.Client.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.JsonWebTokens.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Logging.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Tokens.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.OpenApi.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.Win32.Registry.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\NLog.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\NLog.Extensions.Logging.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\NLog.Web.AspNetCore.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Serilog.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Serilog.AspNetCore.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Serilog.Extensions.Hosting.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Serilog.Extensions.Logging.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Serilog.Formatting.Compact.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Serilog.Settings.Configuration.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Serilog.Sinks.Console.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Serilog.Sinks.Debug.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Serilog.Sinks.File.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.Swagger.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\System.Collections.Immutable.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\System.ComponentModel.Annotations.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\System.Configuration.ConfigurationManager.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\System.Diagnostics.DiagnosticSource.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\System.Drawing.Common.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\System.IdentityModel.Tokens.Jwt.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\System.Runtime.Caching.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\System.Runtime.CompilerServices.Unsafe.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\System.Security.AccessControl.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\System.Security.Cryptography.Pkcs.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\System.Security.Cryptography.ProtectedData.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\System.Security.Permissions.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\System.Security.Principal.Windows.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\System.Text.Encoding.CodePages.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\System.Windows.Extensions.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\System.Xml.XPath.XmlDocument.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netstandard2.0\Microsoft.Win32.Registry.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\Microsoft.Win32.Registry.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Security.AccessControl.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.Pkcs.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\obj\Debug\netcoreapp3.0\BulkMailSender.AssemblyInfoInputs.cache
+Y:\Working Projects\BulkMailSender\BulkMailSender\obj\Debug\netcoreapp3.0\BulkMailSender.AssemblyInfo.cs
+Y:\Working Projects\BulkMailSender\BulkMailSender\obj\Debug\netcoreapp3.0\BulkMailSender.RazorTargetAssemblyInfo.cache
+Y:\Working Projects\BulkMailSender\BulkMailSender\obj\Debug\netcoreapp3.0\BulkMailSender.csproj.CopyComplete
+Y:\Working Projects\BulkMailSender\BulkMailSender\obj\Debug\netcoreapp3.0\staticwebassets\BulkMailSender.StaticWebAssets.Manifest.cache
+Y:\Working Projects\BulkMailSender\BulkMailSender\obj\Debug\netcoreapp3.0\staticwebassets\BulkMailSender.StaticWebAssets.xml
+Y:\Working Projects\BulkMailSender\BulkMailSender\obj\Debug\netcoreapp3.0\BulkMailSender.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\obj\Debug\netcoreapp3.0\BulkMailSender.pdb
+Y:\Working Projects\BulkMailSender\BulkMailSender\obj\Debug\netcoreapp3.0\BulkMailSender.genruntimeconfig.cache
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Identity.Core.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Identity.Stores.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+Y:\Working Projects\BulkMailSender\BulkMailSender\obj\Debug\netcoreapp3.0\BulkMailSender.csproj.CoreCompileInputs.cache
+Y:\Working Projects\BulkMailSender\BulkMailSender\obj\Debug\netcoreapp3.0\BulkMailSender.MvcApplicationPartsAssemblyInfo.cs
+Y:\Working Projects\BulkMailSender\BulkMailSender\obj\Debug\netcoreapp3.0\BulkMailSender.MvcApplicationPartsAssemblyInfo.cache
+Y:\Working Projects\BulkMailSender\BulkMailSender\obj\Debug\netcoreapp3.0\BulkMailSender.csprojAssemblyReference.cache
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\nlog.config
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\appsettings.json
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\BulkMailSender.exe
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\BulkMailSender.deps.json
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\BulkMailSender.runtimeconfig.json
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\BulkMailSender.runtimeconfig.dev.json
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\BulkMailSender.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\BulkMailSender.pdb
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\AutoMapper.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\EPPlus.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Humanizer.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.Data.SqlClient.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Memory.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Identity.Core.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Identity.Stores.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Options.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.Identity.Client.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Logging.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Tokens.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.OpenApi.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.Win32.Registry.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\NLog.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\NLog.Extensions.Logging.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\NLog.Web.AspNetCore.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Serilog.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Serilog.AspNetCore.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Serilog.Extensions.Hosting.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Serilog.Extensions.Logging.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Serilog.Formatting.Compact.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Serilog.Settings.Configuration.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Serilog.Sinks.Console.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Serilog.Sinks.Debug.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Serilog.Sinks.File.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\System.Collections.Immutable.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\System.ComponentModel.Annotations.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\System.Configuration.ConfigurationManager.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\System.Diagnostics.DiagnosticSource.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\System.Drawing.Common.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\System.IdentityModel.Tokens.Jwt.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\System.Runtime.Caching.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\System.Security.AccessControl.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\System.Security.Cryptography.Pkcs.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\System.Security.Cryptography.ProtectedData.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\System.Security.Permissions.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\System.Security.Principal.Windows.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\System.Text.Encoding.CodePages.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\System.Windows.Extensions.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\System.Xml.XPath.XmlDocument.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netstandard2.0\Microsoft.Win32.Registry.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\Microsoft.Win32.Registry.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Security.AccessControl.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.Pkcs.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\obj\Debug\netcoreapp3.0\BulkMailSender.csprojAssemblyReference.cache
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\obj\Debug\netcoreapp3.0\BulkMailSender.AssemblyInfoInputs.cache
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\obj\Debug\netcoreapp3.0\BulkMailSender.AssemblyInfo.cs
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\obj\Debug\netcoreapp3.0\BulkMailSender.csproj.CoreCompileInputs.cache
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\obj\Debug\netcoreapp3.0\BulkMailSender.MvcApplicationPartsAssemblyInfo.cs
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\obj\Debug\netcoreapp3.0\BulkMailSender.MvcApplicationPartsAssemblyInfo.cache
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\obj\Debug\netcoreapp3.0\BulkMailSender.RazorTargetAssemblyInfo.cache
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\obj\Debug\netcoreapp3.0\BulkMailSender.csproj.CopyComplete
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\obj\Debug\netcoreapp3.0\staticwebassets\BulkMailSender.StaticWebAssets.Manifest.cache
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\obj\Debug\netcoreapp3.0\staticwebassets\BulkMailSender.StaticWebAssets.xml
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\obj\Debug\netcoreapp3.0\BulkMailSender.dll
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\obj\Debug\netcoreapp3.0\BulkMailSender.pdb
+C:\BulkEmailSender-Git\BulkEmailSender\BulkMailSender\obj\Debug\netcoreapp3.0\BulkMailSender.genruntimeconfig.cache
