@@ -51,6 +51,7 @@ namespace BulkMailSender.Services.Implementations
             try
             {
                 // using (var context = new BekoDBContext())
+                //ViewModel.TdsEmailBody = _dBContext.TblTdsCertificates.Where(f => f.TdsId == 23).Select(s => s.TdsEmailBody).FirstOrDefault();
 
                 using IDbConnection db = new SqlConnection(_configuration.GetConnectionString("DefaultConnection"));
                 using (var command = db.CreateCommand())
@@ -241,13 +242,17 @@ namespace BulkMailSender.Services.Implementations
                                 }
                                 if (!list.Exists(x => x.TdsMailId == NewEmail))
                                 {
+                                    var NewGuid = Guid.NewGuid().ToString();
+                                    var NewEmailBody = GetTds.TdsEmailBody.Replace("InsertAPIKey", "" + NewGuid + "");
                                     list.Add(new AllTdsEmailViewModel
                                     {
                                         TdsUserName = worksheet.Cells[row, 1].Value.ToString().Trim(),
                                         TdsMailId = NewEmail,
                                         TdsPdfName = (worksheet.Cells[row, 3].Value ==  null ? null :  worksheet.Cells[row, 3].Value.ToString().Trim()),
                                         TdsId = uploadExcelFile.TdsId,
-                                        TdsPdfUrl =(worksheet.Cells[row, 3].Value == null ?  null : fileVirtualPathQP + "/" + GetTds.TdsTxnId + "/" + worksheet.Cells[row, 3].Value.ToString().Trim() + ".pdf" )
+                                        TdsPdfUrl =(worksheet.Cells[row, 3].Value == null ?  null : fileVirtualPathQP + "/" + GetTds.TdsTxnId + "/" + worksheet.Cells[row, 3].Value.ToString().Trim() + ".pdf" ),
+                                        IndividualEmailBody= GetTds.IsIndividualEmailBody == true ? NewEmailBody : null,
+                                        RestructuringKey= GetTds.IsIndividualEmailBody == true ? NewGuid : null,
                                     });
                                 }
                             }
@@ -339,8 +344,6 @@ namespace BulkMailSender.Services.Implementations
 
                 mailMessage.Subject = GetTds.TdsSubject;
 
-                mailMessage.Body = GetTds.TdsEmailBody.ToString();
-
                 if (!string.IsNullOrEmpty(GetTds.TdsEmailCc))
                 {
                     mailMessage.CC.Add(GetTds.TdsEmailCc);
@@ -353,6 +356,8 @@ namespace BulkMailSender.Services.Implementations
                     foreach (var item in GetEmails)
                     {
                         System.Net.Mail.Attachment attachment = null;
+
+                        mailMessage.Body = GetTds.IsIndividualEmailBody==true? item .IndividualEmailBody.ToString() : GetTds.TdsEmailBody.ToString();
 
                         mailMessage.To.Add(item.TdsMailId);
 

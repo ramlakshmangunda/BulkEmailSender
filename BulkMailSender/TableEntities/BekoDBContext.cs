@@ -32,20 +32,16 @@ namespace BulkMailSender.TableEntities
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Data Source=localhost;Initial Catalog=VOLTASBEKO;Integrated Security=False; User Id=sa; Password=Mobile123; Timeout=500000;");
+                optionsBuilder.UseSqlServer("Data Source=agssql16.hyd;Initial Catalog=VOLTASBEKO;Integrated Security=true;");
             }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.HasAnnotation("Relational:Collation", "SQL_Latin1_General_CP1_CI_AS");
+            modelBuilder.HasAnnotation("Relational:Collation", "Latin1_General_CI_AI");
 
             modelBuilder.Entity<AspNetRole>(entity =>
             {
-                entity.HasIndex(e => e.NormalizedName, "RoleNameIndex")
-                    .IsUnique()
-                    .HasFilter("([NormalizedName] IS NOT NULL)");
-
                 entity.Property(e => e.Name).HasMaxLength(256);
 
                 entity.Property(e => e.NormalizedName).HasMaxLength(256);
@@ -53,9 +49,9 @@ namespace BulkMailSender.TableEntities
 
             modelBuilder.Entity<AspNetRoleClaim>(entity =>
             {
-                entity.HasIndex(e => e.RoleId, "IX_AspNetRoleClaims_RoleId");
-
-                entity.Property(e => e.RoleId).IsRequired();
+                entity.Property(e => e.RoleId)
+                    .IsRequired()
+                    .HasMaxLength(450);
 
                 entity.HasOne(d => d.Role)
                     .WithMany(p => p.AspNetRoleClaims)
@@ -64,12 +60,6 @@ namespace BulkMailSender.TableEntities
 
             modelBuilder.Entity<AspNetUser>(entity =>
             {
-                entity.HasIndex(e => e.NormalizedEmail, "EmailIndex");
-
-                entity.HasIndex(e => e.NormalizedUserName, "UserNameIndex")
-                    .IsUnique()
-                    .HasFilter("([NormalizedUserName] IS NOT NULL)");
-
                 entity.Property(e => e.Email).HasMaxLength(256);
 
                 entity.Property(e => e.NormalizedEmail).HasMaxLength(256);
@@ -81,9 +71,9 @@ namespace BulkMailSender.TableEntities
 
             modelBuilder.Entity<AspNetUserClaim>(entity =>
             {
-                entity.HasIndex(e => e.UserId, "IX_AspNetUserClaims_UserId");
-
-                entity.Property(e => e.UserId).IsRequired();
+                entity.Property(e => e.UserId)
+                    .IsRequired()
+                    .HasMaxLength(450);
 
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.AspNetUserClaims)
@@ -94,9 +84,9 @@ namespace BulkMailSender.TableEntities
             {
                 entity.HasKey(e => new { e.LoginProvider, e.ProviderKey });
 
-                entity.HasIndex(e => e.UserId, "IX_AspNetUserLogins_UserId");
-
-                entity.Property(e => e.UserId).IsRequired();
+                entity.Property(e => e.UserId)
+                    .IsRequired()
+                    .HasMaxLength(450);
 
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.AspNetUserLogins)
@@ -106,8 +96,6 @@ namespace BulkMailSender.TableEntities
             modelBuilder.Entity<AspNetUserRole>(entity =>
             {
                 entity.HasKey(e => new { e.UserId, e.RoleId });
-
-                entity.HasIndex(e => e.RoleId, "IX_AspNetUserRoles_RoleId");
 
                 entity.HasOne(d => d.Role)
                     .WithMany(p => p.AspNetUserRoles)
@@ -130,7 +118,7 @@ namespace BulkMailSender.TableEntities
             modelBuilder.Entity<TblAllTdsEmail>(entity =>
             {
                 entity.HasKey(e => e.MailId)
-                    .HasName("PK__TBL_All___09A874FA229E7E9B");
+                    .HasName("PK__TBL_All___09A874FA346BC6CB");
 
                 entity.ToTable("TBL_All_Tds_Emails");
 
@@ -145,6 +133,10 @@ namespace BulkMailSender.TableEntities
                 entity.Property(e => e.CreatedOn)
                     .HasColumnType("datetime")
                     .HasDefaultValueSql("(getdate())");
+
+                entity.Property(e => e.RestructuringKey)
+                    .HasMaxLength(150)
+                    .IsUnicode(false);
 
                 entity.Property(e => e.TdsMailId)
                     .IsRequired()
@@ -182,6 +174,8 @@ namespace BulkMailSender.TableEntities
                 entity.ToTable("TBL_Tds_Certificates");
 
                 entity.Property(e => e.TdsId).HasColumnName("TdsID");
+
+                entity.Property(e => e.IsIndividualEmailBody).HasDefaultValueSql("((0))");
 
                 entity.Property(e => e.TdsCompleted).HasDefaultValueSql("((0))");
 

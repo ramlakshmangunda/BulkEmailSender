@@ -241,3 +241,14 @@ REFERENCES [dbo].[TBL_Tds_Certificates] ([TdsID])
 GO
 ALTER TABLE [dbo].[TBL_All_Tds_Emails] CHECK CONSTRAINT [FK_TBL_All_Tds_Emails_TdsId]
 GO
+
+
+----18/05/2021
+ALTER TABLE [dbo].[TBL_Tds_Certificates] ADD IsIndividualEmailBody BIT DEFAULT 0;
+
+UPDATE [TBL_Tds_Certificates] SET IsIndividualEmailBody=0;
+
+
+ALTER TABLE [dbo].[TBL_All_Tds_Emails] ADD IndividualEmailBody NVARCHAR(MAX);
+
+Alter table [dbo].[TBL_All_Tds_Emails] ADD RestructuringKey VARCHAR(150)

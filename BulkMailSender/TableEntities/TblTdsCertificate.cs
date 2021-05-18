@@ -26,6 +26,7 @@ namespace BulkMailSender.TableEntities
         public DateTime? TdsCreatedOn { get; set; }
         public string TdsUpdatedBy { get; set; }
         public DateTime? TdsUpdatedOn { get; set; }
+        public bool? IsIndividualEmailBody { get; set; }
 
         public virtual ICollection<TblAllTdsEmail> TblAllTdsEmails { get; set; }
     }

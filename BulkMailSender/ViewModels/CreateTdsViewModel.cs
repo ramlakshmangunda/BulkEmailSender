@@ -14,5 +14,6 @@ namespace BulkMailSender.ViewModels
         public string TdsEmailCc { get; set; }
         public string TdsEmailBody { get; set; }
         public DateTime? TdsCreatedOn { get; set; }
+        public bool? IsIndividualEmailBody { get; set; }
     }
 }
