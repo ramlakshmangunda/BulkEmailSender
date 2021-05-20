@@ -7,6 +7,11 @@ namespace BulkMailSender.TableEntities
 {
     public partial class TblAllTdsEmail
     {
+        public TblAllTdsEmail()
+        {
+            TblRestructurings = new HashSet<TblRestructuring>();
+        }
+
         public int MailId { get; set; }
         public int TdsId { get; set; }
         public string TdsUserName { get; set; }
@@ -22,5 +27,6 @@ namespace BulkMailSender.TableEntities
         public string RestructuringKey { get; set; }
 
         public virtual TblTdsCertificate Tds { get; set; }
+        public virtual ICollection<TblRestructuring> TblRestructurings { get; set; }
     }
 }

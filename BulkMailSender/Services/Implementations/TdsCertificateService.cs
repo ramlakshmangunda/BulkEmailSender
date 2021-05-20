@@ -588,5 +588,21 @@ namespace BulkMailSender.Services.Implementations
                 return false;
             }
         }
+
+        #region ExportExcel
+        public async Task<List<RestructuringViewModel>> VoltasRestructuringExportExcel()
+        {
+            try
+            {
+                var GetData =await _dBContext.TblRestructurings.ToListAsync();
+                var Mapdata = _mapper.Map<List<RestructuringViewModel>>(GetData);
+                return Mapdata;
+            }
+            catch (Exception Ex)
+            {
+                throw Ex;
+            }
+        }
+        #endregion
     }
 }

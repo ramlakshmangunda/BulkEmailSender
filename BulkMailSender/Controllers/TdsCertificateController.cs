@@ -1,12 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using BulkMailSender.Models;
 using BulkMailSender.Services.Interfaces;
 using BulkMailSender.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using OfficeOpenXml;
 
 namespace BulkMailSender.Controllers
 {
@@ -15,10 +20,12 @@ namespace BulkMailSender.Controllers
     public class TdsCertificateController : ControllerBase
     {
         private readonly ITdsCertificateService _tdsService;
+        private readonly IConfiguration _configurations;
 
-        public TdsCertificateController(ITdsCertificateService tdsService)
+        public TdsCertificateController(ITdsCertificateService tdsService, IConfiguration configurations)
         {
             _tdsService = tdsService;
+            _configurations = configurations;
         }
 
         [HttpPost("AddNewTdsCertificate")]
@@ -216,5 +223,83 @@ namespace BulkMailSender.Controllers
                 throw Ex;
             }
         }
+
+        #region Export Excel
+        [HttpGet("VoltasRestructuringExportExcel")]
+        [ProducesResponseType(200, Type = typeof(List<RestructuringViewModel>))]
+        public async Task<IActionResult> VoltasRestructuringExportExcel()
+        {
+            try
+            {
+                var ExportExcel = await _tdsService.VoltasRestructuringExportExcel();
+                var Datatable = ConvertToDataTable<RestructuringViewModel>(ExportExcel);
+                DataSet ds = new DataSet();
+                ds.Tables.Add(Datatable);
+                GenerateExcel(ds);
+                return Ok("Excel saved in server,Please download.");
+            }
+            catch (Exception Ex)
+            {
+                throw Ex;
+            }
+        }
+
+        static DataTable ConvertToDataTable<T>(List<T> models)
+        {
+            // creating a data table instance and typed it as our incoming model   
+            // as I make it generic, if you want, you can make it the model typed you want.  
+            DataTable dataTable = new DataTable(typeof(T).Name);
+
+            //Get all the properties of that model  
+            PropertyInfo[] Props = typeof(T).GetProperties(BindingFlags.Public | BindingFlags.Instance);
+
+            // Loop through all the properties              
+            // Adding Column name to our datatable  
+            foreach (PropertyInfo prop in Props)
+            {
+                //Setting column names as Property names    
+                dataTable.Columns.Add(prop.Name);
+            }
+            // Adding Row and its value to our dataTable  
+            foreach (T item in models)
+            {
+                var values = new object[Props.Length];
+                for (int i = 0; i < Props.Length; i++)
+                {
+                    //inserting property values to datatable rows    
+                    values[i] = Props[i].GetValue(item, null);
+                }
+                // Finally add value to datatable    
+                dataTable.Rows.Add(values);
+            }
+            return dataTable;
+        }
+        
+        private void GenerateExcel(DataSet dataSet)
+        {
+            using (ExcelPackage pck = new ExcelPackage())
+            {
+                foreach (DataTable dataTable in dataSet.Tables)
+                {
+                    ExcelWorksheet workSheet = pck.Workbook.Worksheets.Add(dataTable.TableName);
+                    workSheet.Cells["A1"].LoadFromDataTable(dataTable, true);
+                }
+                var basePath = _configurations.GetValue<string>("ExcelDownloadPaths:VoltasRestructureExcelPath");
+
+                var Filepath = basePath + "VoltasRestructure" + ".xlsx";
+
+                if (System.IO.File.Exists(Filepath))
+                {
+                    System.IO.File.Delete(Filepath);
+                }
+
+                if (!Directory.Exists(basePath))
+                    Directory.CreateDirectory(basePath);
+
+                pck.SaveAs(new FileInfo(Filepath));
+            }
+        }
+
+        #endregion
     }
 }

@@ -17,5 +17,6 @@ namespace BulkMailSender.Services.Interfaces
         Task<ResponseModel> DeleteTdsEmail(int? MailId);
         Task<ResponseModel> DeletePdfFile(int? MailId);
         Task<ResponseModel> UpdateTDSEmailData(EmailUpdateModel model);
+        Task<List<RestructuringViewModel>> VoltasRestructuringExportExcel();
     }
 }

@@ -18,6 +18,7 @@ namespace BulkMailSender.ProfilesManagement
             CreateMap<TblAllTdsEmail, AllTdsEmailViewModel>().ReverseMap();
             CreateMap<TblAllTdsEmail, EmailUpdateModel>().ReverseMap()
                 .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
+            CreateMap<TblRestructuring, RestructuringViewModel>();
         }
     }
 }

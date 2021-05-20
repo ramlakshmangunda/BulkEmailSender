@@ -25,6 +25,7 @@ namespace BulkMailSender.TableEntities
         public virtual DbSet<AspNetUserRole> AspNetUserRoles { get; set; }
         public virtual DbSet<AspNetUserToken> AspNetUserTokens { get; set; }
         public virtual DbSet<TblAllTdsEmail> TblAllTdsEmails { get; set; }
+        public virtual DbSet<TblRestructuring> TblRestructurings { get; set; }
         public virtual DbSet<TblTdsCertificate> TblTdsCertificates { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -165,6 +166,46 @@ namespace BulkMailSender.TableEntities
                     .HasForeignKey(d => d.TdsId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_TBL_All_Tds_Emails_TdsId");
+            });
+
+            modelBuilder.Entity<TblRestructuring>(entity =>
+            {
+                entity.HasKey(e => e.Rid)
+                    .HasName("Pk_Tbl_Restructuring_RID");
+
+                entity.ToTable("Tbl_Restructuring");
+
+                entity.Property(e => e.Rid).HasColumnName("RID");
+
+                entity.Property(e => e.CreatedBy).HasMaxLength(20);
+
+                entity.Property(e => e.CreatedOn).HasColumnType("datetime");
+
+                entity.Property(e => e.Email)
+                    .IsRequired()
+                    .HasMaxLength(250)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.TdsEid).HasColumnName("TdsEId");
+
+                entity.Property(e => e.UpdatedBy).HasMaxLength(20);
+
+                entity.Property(e => e.UpdatedOn).HasColumnType("datetime");
+
+                entity.Property(e => e.VendorCode)
+                    .IsRequired()
+                    .HasMaxLength(20)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.VendorName)
+                    .IsRequired()
+                    .HasMaxLength(150)
+                    .IsUnicode(false);
+
+                entity.HasOne(d => d.TdsE)
+                    .WithMany(p => p.TblRestructurings)
+                    .HasForeignKey(d => d.TdsEid)
+                    .HasConstraintName("Fk_TBL_All_Tds_Emails_MailId_Tbl_Restructuring");
             });
 
             modelBuilder.Entity<TblTdsCertificate>(entity =>

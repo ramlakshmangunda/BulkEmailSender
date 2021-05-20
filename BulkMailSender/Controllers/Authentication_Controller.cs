@@ -14,6 +14,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using BulkMailSender.Authentication;
 using BulkMailSender.Models;
+using System.ComponentModel.DataAnnotations;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace RestroBarandPubsAPI.Controllers.Authentication
 {
@@ -24,11 +26,14 @@ namespace RestroBarandPubsAPI.Controllers.Authentication
         private readonly UserManager<Application_User> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly IConfiguration _configuration;
-        public Authentication_Controller(UserManager<Application_User> userManager, RoleManager<IdentityRole> roleManager, IConfiguration configuration)
+        private readonly IServiceProvider _serviceProvider;
+
+        public Authentication_Controller(UserManager<Application_User> userManager, RoleManager<IdentityRole> roleManager, IConfiguration configuration, IServiceProvider serviceProvider)
         {
             _userManager = userManager;
             _roleManager = roleManager;
             _configuration = configuration;
+            _serviceProvider = serviceProvider;
         }
 
         
@@ -40,7 +45,7 @@ namespace RestroBarandPubsAPI.Controllers.Authentication
             var user = await _userManager.FindByNameAsync(model.Username);
             if (user != null && await _userManager.CheckPasswordAsync(user, model.Password))
             {
-               // var userRoles = await _userManager.GetRolesAsync(user);
+                var userRoles = await _userManager.GetRolesAsync(user);
 
                 var authClaims = new List<Claim>
                 {
@@ -48,10 +53,10 @@ namespace RestroBarandPubsAPI.Controllers.Authentication
                     new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                 };
 
-                //foreach (var userRole in userRoles)
-                //{
-                //    authClaims.Add(new Claim(ClaimTypes.Role, userRole));
-                //}
+                foreach (var userRole in userRoles)
+                {
+                    authClaims.Add(new Claim(ClaimTypes.Role, userRole));
+                }
 
                 var authSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:Secret"]));
 
@@ -66,10 +71,13 @@ namespace RestroBarandPubsAPI.Controllers.Authentication
                 return Ok(new
                 {
                     token = new JwtSecurityTokenHandler().WriteToken(token),
-                    expiration = token.ValidTo
+                    expiration = token.ValidTo,
+                    UserName=user.UserName,
+                    Roles= userRoles,
+                    Status = "success"
                 });
             }
-            return Unauthorized();
+            return Ok(new Response { Status = "failed", Message = "invalid username or password." });
         }
 
         [HttpPost]
@@ -95,10 +103,6 @@ namespace RestroBarandPubsAPI.Controllers.Authentication
                     return StatusCode(StatusCodes.Status500InternalServerError, new Response { Status = "Error", Message = "User creation failed! Please check user details or password policy and try again." });
 
                 }
-                //else
-                //{
-                //    var roleresult = await _userManager.AddToRoleAsync(user, "Customer");
-                //}
                 return Ok(new Response { Status = "Success", Message = "User created successfully!" });
             }
             catch (Exception Exc)
@@ -109,35 +113,62 @@ namespace RestroBarandPubsAPI.Controllers.Authentication
             
         }
 
-        //[HttpPost]
-        //[Route("register_admin")]
-        //public async Task<IActionResult> RegisterAdmin([FromBody] Register_Model model)
-        //{
-        //    var userExists = await _userManager.FindByNameAsync(model.Username);
-        //    if (userExists != null)
-        //        return StatusCode(StatusCodes.Status500InternalServerError, new Response { Status = "Error", Message = "User already exists!" });
+        [HttpPost]
+        [Route("CreateRole")]
+        public async Task<IActionResult> CreateRole([Required] string RoleName)
+        {
+            if (ModelState.IsValid)
+            {
+                var RoleExists = await _roleManager.FindByNameAsync(RoleName);
+                if (RoleExists != null)
+                    return StatusCode(StatusCodes.Status500InternalServerError, new Response { Status = "Error", Message = "Role already exists!" });
 
-        //    Application_User user = new Application_User()
-        //    {
-        //        Email = model.Email,
-        //        SecurityStamp = Guid.NewGuid().ToString(),
-        //        UserName = model.Username
-        //    };
-        //    var result = await _userManager.CreateAsync(user, model.Password);
-        //    if (!result.Succeeded)
-        //        return StatusCode(StatusCodes.Status500InternalServerError, new Response { Status = "Error", Message = "User creation failed! Please check user details and try again." });
+                IdentityResult result = await _roleManager.CreateAsync(new IdentityRole(RoleName));
+                if (!result.Succeeded)
+                    return StatusCode(StatusCodes.Status500InternalServerError, new Response { Status = "Error", Message = "Role creation failed! Please check Role Name and try again." });
+            }
+            return Ok(new Response { Status = "Success", Message = "Role created successfully!" });
+        }
 
-        //    if (!await _roleManager.RoleExistsAsync(User_Roles.Admin))
-        //        await _roleManager.CreateAsync(new IdentityRole(User_Roles.Admin));
-        //    if (!await _roleManager.RoleExistsAsync(User_Roles.User))
-        //        await _roleManager.CreateAsync(new IdentityRole(User_Roles.User));
+        [HttpPost]
+        [Route("CreateUserRoles")]
+        public async Task<IActionResult> CreateUserRoles( [Required] string UserName, [Required] string RoleName)
+        {
 
-        //    if (await _roleManager.RoleExistsAsync(User_Roles.Admin))
-        //    {
-        //        await _userManager.AddToRoleAsync(user, User_Roles.Admin);
-        //    }
+            var RoleManager = _serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+            var UserManager = _serviceProvider.GetRequiredService<UserManager<Application_User>>();
 
-        //    return Ok(new Response { Status = "Success", Message = "User created successfully!" });
-        //}
+            //Adding Admin Role
+            var roleCheck = await RoleManager.RoleExistsAsync(RoleName);
+            if (!roleCheck)
+            {
+                //create the roles and seed them to the database
+                return StatusCode(StatusCodes.Status500InternalServerError, new Response { Status = "Error", Message = "Role does not exists!" });
+            }
+            //Assign Admin role to the main User here we have given our newly registered 
+            //login id for Admin management
+            Application_User user = await UserManager.FindByNameAsync(UserName);
+            
+            // Add User To Role
+            var userInRole = await _userManager.IsInRoleAsync(user, RoleName);
+
+            if (!userInRole)
+            {
+                await UserManager.AddToRoleAsync(user, RoleName);
+                return Ok(new Response { Status = "Success", Message = "Role assigned successfully!" });
+            }
+            else
+            {
+                return Ok(new Response { Status = "Not added", Message = "Same role already assigned for this user." });
+            }
+        }
+        [HttpPost]
+        [Route("ChangePassword")]
+        public async Task<IActionResult> ChangePassword(UserPasswordChangeModel model)
+        {
+            Application_User appUser = _userManager.FindByNameAsync(model.UserName).Result;
+            await _userManager.ChangePasswordAsync(appUser, model.OldPassword, model.NewPassword);
+            return Ok(new Response { Status = "Password Changed", Message = "Password changed successfully." });
+        }
     }
 }
